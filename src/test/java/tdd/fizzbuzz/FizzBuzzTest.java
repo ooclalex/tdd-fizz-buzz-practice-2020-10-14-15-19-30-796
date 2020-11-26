@@ -35,4 +35,12 @@ public class FizzBuzzTest {
 
         assertEquals("Whizz", order);
     }
+
+    @Test
+    public void should_return_FizzBuzz_when_input_is_multiple_of_15() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String order = fizzBuzz.countOff(15);
+
+        assertEquals("FizzBuzz", order);
+    }
 }
