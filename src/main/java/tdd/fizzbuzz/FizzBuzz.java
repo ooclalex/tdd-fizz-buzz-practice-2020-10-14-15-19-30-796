@@ -1,27 +1,37 @@
 package tdd.fizzbuzz;
 
 public class FizzBuzz {
+    private static final int MODULO_3 = 3;
+    private static final int MODULO_5 = 5;
+    private static final int MODULO_7 = 7;
+    private static final int MODULO_15 = MODULO_3 * MODULO_5;
+    private static final int MODULO_21 = MODULO_3 * MODULO_7;
+    private static final int MODULO_35 = MODULO_5 * MODULO_7;
+    private static final int MODULO_105 = MODULO_3 * MODULO_5 * MODULO_7;
+    private static final String FIZZ = "Fizz";
+    private static final String BUZZ = "Buzz";
+    private static final String WHIZZ = "Whizz";
     public String countOff(int i) {
-        if (i % 105 == 0) {
-            return "FizzBuzzWhizz";
+        if (i % MODULO_105 == 0) {
+            return FIZZ + BUZZ + WHIZZ;
         }
-        if (i % 35 == 0) {
-            return "BuzzWhizz";
+        if (i % MODULO_35 == 0) {
+            return BUZZ + WHIZZ;
         }
-        if (i % 21 == 0) {
-            return "FizzWhizz";
+        if (i % MODULO_21 == 0) {
+            return FIZZ + WHIZZ;
         }
-        if (i % 15 == 0) {
-            return "FizzBuzz";
+        if (i % MODULO_15 == 0) {
+            return FIZZ + BUZZ;
         }
-        if (i % 3 == 0) {
-            return "Fizz";
+        if (i % MODULO_3 == 0) {
+            return FIZZ;
         }
-        if (i % 5 == 0) {
-            return "Buzz";
+        if (i % MODULO_5 == 0) {
+            return BUZZ;
         }
-        if (i % 7 == 0) {
-            return "Whizz";
+        if (i % MODULO_7 == 0) {
+            return WHIZZ;
         }
         return String.valueOf(i);
     }
