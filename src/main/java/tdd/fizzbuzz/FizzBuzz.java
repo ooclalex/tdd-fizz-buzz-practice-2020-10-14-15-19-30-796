@@ -2,6 +2,9 @@ package tdd.fizzbuzz;
 
 public class FizzBuzz {
     public String countOff(int i) {
+        if (i % 105 == 0) {
+            return "FizzBuzzWhizz";
+        }
         if (i % 35 == 0) {
             return "BuzzWhizz";
         }
