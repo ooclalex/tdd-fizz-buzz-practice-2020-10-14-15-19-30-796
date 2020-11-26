@@ -29,7 +29,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_Whizz_when_input_is_multiple_of_5() {
+    public void should_return_Whizz_when_input_is_multiple_of_7() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         String order = fizzBuzz.countOff(7);
 
