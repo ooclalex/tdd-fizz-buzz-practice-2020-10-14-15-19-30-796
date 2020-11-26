@@ -27,4 +27,12 @@ public class FizzBuzzTest {
 
         assertEquals("Buzz", order);
     }
+
+    @Test
+    public void should_return_Whizz_when_input_is_multiple_of_5() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String order = fizzBuzz.countOff(7);
+
+        assertEquals("Whizz", order);
+    }
 }
